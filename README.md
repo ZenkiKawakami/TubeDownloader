@@ -15,7 +15,7 @@ pip install moviepy
 1.git clone https://github.com/ZenkiKawakami/TubeDownloader.git  
 2.cd TubeDownloader  
 3.python TubeDownloader.py
-4.input video(movie without audio), audio(audio only) or mix(combined data of video and audio)  
+4.input **video(movie without audio)**, **audio(audio only)** or **mix(combined data of video and audio)**  
 5.download data to the corresponding folder
 
 # Lisence
