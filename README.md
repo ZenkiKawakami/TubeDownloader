@@ -12,6 +12,6 @@ pip install pyTube3
 pip install moviepy
 ```
 # Usage
-git clone https://github.com/ZenkiKawakami/TubeDownloader.git
-cd TubeDownloader
-python TubeDownloader.py
+1.git clone https://github.com/ZenkiKawakami/TubeDownloader.git
+2.cd TubeDownloader
+3.python TubeDownloader.py
