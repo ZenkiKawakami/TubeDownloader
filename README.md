@@ -2,8 +2,8 @@
 You can download movie/audio from Youtube with python.
 
 # Requirement
-pyTube3 9.6.4
-moviepy 1.0.3
+pyTube3 9.6.4  
+moviepy 1.0.3  
 
 # Installation
 
