@@ -4,6 +4,7 @@
 from pytube import YouTube
 import moviepy.editor as mp
 import os
+import re
 
 def downloadVideo(yt, title):
     # get video for mp4
@@ -39,7 +40,7 @@ def getTitle(yt):
     title = yt.title
     if title[-1] == '.':
         title  = title[:-2]
-    return title
+    return re.sub(r'[\\/:*?"<>|]+','', title)
 
 def main():
     types =''
