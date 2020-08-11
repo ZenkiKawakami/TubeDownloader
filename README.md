@@ -1,8 +1,8 @@
 # TubeDownloader
 You can download movie/audio from Youtube with python.  
 This code automatically peform  
-    1.downloading high quality audio/video respectively  
-    2.mix them without installing movie editor  
+    *1.downloading high quality audio/video respectively  
+    *2.mix them without installing movie editor  
 So you could easily get high quality movie with this software.  
 
 #  Background
