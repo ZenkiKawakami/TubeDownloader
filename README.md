@@ -1,11 +1,15 @@
 # TubeDownloader
 You can download movie/audio from Youtube with python.  
-When downloading high quality movie with pytube3, you must download "high quality audio_only" and "high quality video_only",  
-and mix them by yourself.   
-If you have not installed movie editor like ffmpeg, you also install it before audio/video mix.  
-  
-This code automatically peform 1.downloading audio/video respectively and 2.mix them without installing movie editor.  
+This code automatically peform 
+  1.downloading high quality audio/video respectively  
+  2.mix them without installing movie editor  
 So you could easily get high quality movie with this software.  
+
+#  Background
+When downloading high quality movie with pytube3,  
+you must download "high quality audio_only" and "high quality video_only",  and mix them by yourself.   
+If you have not installed movie editor like ffmpeg, you also install it before audio/video mix.  
+This software would help if you want to avoid such a time-consuming manual method.
 
 # Requirement
 pyTube3 9.6.4  
