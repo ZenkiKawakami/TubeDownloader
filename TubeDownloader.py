@@ -1,5 +1,11 @@
 #[参考]:https://qiita.com/Cyber_Hacnosuke/items/d722eae05d6f7c41a9b7
 #[参考2]:https://github.com/Zulko/moviepy/issues/591
+#[参考3]:https://stackoverflow.com/questions/61960657/getting-keyerror-url-with-pytube
+
+#[参考4]:https://github.com/nficano/pytube/issues/203
+#itunesやQuickTimePlayerだとmp3が二倍の長さになる(再生できるが，後ろ部分は再生出来ない)/mp4がうまく再生できない，現象を確認
+#pytubeではバグ報告されてはいるが，特にこれと言って対策はされていないらしい
+#VLCではうまく再生できるみたいなのでそちらをご利用ください
 
 from pytube import YouTube
 import moviepy.editor as mp
@@ -17,6 +23,7 @@ def downloadAudio(yt, title):
     #get audio for mp4
     print("start download audio...")
     yt.streams.get_by_itag(140).download('./audio', title)
+    #yt.streams.get_audio_only().download('./audio', title)
     print("completed!")
 
     #generate mp3 from mp4
@@ -36,11 +43,9 @@ def mix(yt, title):
     # os.remove('./video/' + title + '.mp4')
 
 def getTitle(yt):
-    #終わり文字が.だと拡張子を付けるときにバグを呼ぶので意図的に消す。
+    #タイトル中にファイル名禁止文字やドットがあると危ないので消す
     title = yt.title
-    if title[-1] == '.':
-        title  = title[:-2]
-    return re.sub(r'[\\/:*?"<>|]+','', title)
+    return re.sub(r'[\\/:*?"<>|.]+','', title)
 
 def main():
     types =''
