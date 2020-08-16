@@ -34,5 +34,5 @@ pip install moviepy
 1.Mix movie might not be well played with quick time player   
 2.And duration of audio data(mp3) might be twice as long as origin(but only played first-half.)  
   
-I'm not sure, but these problem might be caused by a bug in moviepy.
+I'm not sure, but these problem might be caused by a bug in moviepy.  
 You might play the mix movie with VLC Media Player. So please play with it. 
